@@ -3,6 +3,7 @@
 ## Introduction
 
 In this article, I'll walk through my solution to an interesting C++ programming challenge: implementing the `assign` method for an `interval_map` data structure. This challenge tests fundamental understanding of data structures, C++ STL, and efficient algorithm design. Let's dive into the problem and explore a robust solution.
+Based on think-cell-recrutment-task Recrutment task of Think Cell 2025 Software GmbH
 
 ## Understanding the Problem
 

@@ -169,7 +169,7 @@ public:
         // If the last value in the map is not m_valBegin, set it
         if (!(m_map.rbegin()->second == m_valBegin))
         {
-            m_map[last_key] = m_valBegin;
+            m_map.insert_or_assign(last_key, m_valBegin);
         }
 
         this->print();

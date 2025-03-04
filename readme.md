@@ -25,6 +25,8 @@ The mapping would be:
 
 The representation must be canonical, meaning consecutive map entries cannot contain the same value, and the first map entry must differ from `m_valBegin`.
 
+![Presentation interval_map.](/img/interval-map-visualization.jpg)
+
 ## The `assign` Method Challenge
 
 Our task is to implement the `assign(keyBegin, keyEnd, val)` method, which assigns the value `val` to all keys in the half-open interval `[keyBegin, keyEnd)`. This operation may require inserting new entries into the map or modifying existing ones while maintaining the canonical representation.

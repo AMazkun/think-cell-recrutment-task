@@ -5,6 +5,9 @@
 In this article, I'll walk through my solution to an interesting C++ programming challenge: implementing the `assign` method for an `interval_map` data structure. This challenge tests fundamental understanding of data structures, C++ STL, and efficient algorithm design. Let's dive into the problem and explore a robust solution.
 Based on think-cell-recrutment-task Recrutment task of Think Cell 2025 Software GmbH
 
+Article:
+[LinkedIn](https://www.linkedin.com/pulse/%25D1%2581%25D0%25BA%25D0%25BB%25D0%25B0%25D0%25B4%25D0%25BD%25D0%25BE%25D1%2589%25D1%2596-%25D0%25BF%25D1%2580%25D0%25B8-%25D1%2582%25D0%25B5%25D1%2581%25D1%2582%25D1%2583%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25BD%25D1%2596-%25D0%25BC%25D0%25B0%25D1%2582%25D0%25B5%25D0%25BC%25D0%25B0%25D1%2582%25D0%25B8%25D1%2587%25D0%25BD%25D0%25B8%25D1%2585-%25D0%25B0%25D0%25BB%25D0%25B3%25D0%25BE%25D1%2580%25D0%25B8%25D1%2582%25D0%25BC%25D1%2596%25D0%25B2-anatoly-mazkun-jcpze).
+
 ## Understanding the Problem
 
 An `interval_map<K,V>` is a specialized data structure that associates ranges of consecutive keys of type K with values of type V. It's particularly useful when multiple consecutive keys should map to the same value, allowing for a more compact representation than a regular map.

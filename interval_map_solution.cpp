@@ -532,7 +532,7 @@ void test_complex_scenarios_str2()
     std::cout << "Complex scenario tests passed!" << std::endl;
 }
 
-void IntervalMapTest()
+void test_intervals()
 {
     // Create an interval_map with initial value 'A'
     interval_map<int, char> imap('A');
@@ -574,8 +574,7 @@ void IntervalMapTest()
 }
 
 #include <random>
-
-void IntervalMapTest_G()
+void test_randomised()
 {
     interval_map<int, char> m('A');
     assert(m.get_valBegin() == 'A');
@@ -685,7 +684,7 @@ void IntervalMapTest_G()
     }
 }
 
-void t()
+void test_selected_cases()
 {
     {
         interval_map<int, char> m('A');
@@ -888,14 +887,11 @@ int main()
     std::cout << "=== Starting interval_map tests ===" << std::endl;
 
     test_complex_scenarios_str2();
-
-    t();
-
-    IntervalMapTest_G();
-
+    test_selected_cases();
+    test_randomised();
     test_complex_scenarios_str();
     test_complex_scenarios();
-    IntervalMapTest();
+    test_intervals();
     test_empty_interval();
     test_simple_assign();
     test_overlapping_intervals();
